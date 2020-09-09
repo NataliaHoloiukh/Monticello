@@ -1,0 +1,114 @@
+.projects {
+    width: 100%;
+
+    &__line-span {
+        width: 100px;
+        height: 1px;
+        background-color: $font-grey;
+        display: block;
+        margin: 99px auto 31px;
+    }
+    
+    &__section-title {
+        font-family: 'gothambold1';
+        font-size: 44px;
+        color: $font-grey;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 160px;
+    }
+}
+
+.project {
+    display: flex;
+
+    &__shadow {
+        width: 585px;
+        height: 470px;
+        background-color: $colorFirst;
+        position: absolute;
+        margin-left: -215px;
+        margin-top: -70px;
+    }
+
+    &__img {
+        width: 630px;
+        height: 470px;
+        position: relative;
+    }
+}
+
+.description {
+    margin-top: 56px;
+    margin-left: 70px;
+
+    &__title1 {
+        font-family: 'GothamBook';
+        font-size: 22px;
+        color: $font-grey;
+        text-transform: uppercase;
+    }
+
+    &__title2 {
+        font-family: 'gothambold1';
+        font-size: 44px;
+        color: $font-grey;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        width: 460px;
+        font-family: 'GothamBook';
+        font-size: 18px;
+        color: $font-grey-subtitle;
+        letter-spacing: normal;
+        text-align: left;
+        margin-top: 24px;
+        letter-spacing: -1px;
+        word-spacing: 4px;
+        line-height: 30px;
+    }
+
+    &__button {
+        margin-top: 31px;
+        @include button;
+
+        &:hover {
+            @include button-hov;
+        }
+    }
+
+    &__address {
+        margin-top: 58px;
+        font-family: 'gothambook';
+        font-style: italic;
+        font-size: 16px;
+    }
+}
+
+.project2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 210px;
+    margin-bottom: 140px;
+
+    &__shadow {
+        width: 585px;
+        height: 470px;
+        background-color: $colorSecond;
+        position: absolute;
+        margin-right: -215px;
+        margin-top: -70px;
+    }
+
+    &__img {
+        width: 630px;
+        height: 470px;
+        position: relative;
+    }
+}
+
+.description2 {
+    margin-right: 71px;
+    margin-top: 55px;
+}

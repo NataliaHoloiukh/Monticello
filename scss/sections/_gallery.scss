@@ -1,0 +1,73 @@
+.gallery {
+    &__a {
+        display: flex;
+    }
+    &__button {
+        @include button;
+        margin: 60px auto 140px;
+
+        &:hover {
+            @include button-hov;
+        }
+    }
+
+    &__line-span{
+        width: 100px;
+        height: 1px;
+        background-color: $font-grey;
+        display: block;
+        margin: 140px auto 31px;
+    }
+    &__section-title {
+        font-size: 44px;
+        color: $font-grey;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'GothamBook';
+        margin-bottom: 95px;
+    }
+}
+
+.picture {
+    display: flex;
+
+    &__big {
+        width: 580px;
+        height: 438px;
+        position: relative;
+
+        &__symbol {
+            position: absolute;
+            margin-left: -329px;
+            margin-top: 179px;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.2);
+                transition: 1s;
+            }
+        }
+    }
+
+    &__mosaic {
+        display: flex;
+        flex-wrap: wrap;
+
+        &__item {
+            width: 285px;
+            height: 214px;
+            margin-left: 10px;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: 1s;
+            }
+
+            &--row {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+

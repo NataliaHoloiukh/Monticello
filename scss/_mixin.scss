@@ -1,0 +1,36 @@
+// flex center center
+
+@mixin flexCentCent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button {
+    width: 190px;
+    height: 50px;
+    border: solid 1px $font-grey;
+    background-color: #ffffff;
+    font-family: 'Gotham Medium Regular';
+    font-size: 14px;
+    color: $font-grey;
+    text-transform: uppercase;
+}
+
+@mixin button-hov {
+    background-color: $font-grey;
+    color: #ffffff;
+} 
+
+@mixin line-span {
+    width: 100px;
+    height: 1px;
+    display: block;
+}
+
+@mixin section-title {
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'GothamBook';
+}

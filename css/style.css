@@ -1,0 +1,1039 @@
+@charset "UTF-8";
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "GothamBook";
+  src: url("../assets/fonts/GothamBook/GothamBook.eot"), url("../assets/fonts/GothamBook/GothamBook.woff") format("woff"), url("../assets/fonts/Gothambook/GothamBook.ttf") format("truetype");
+}
+@font-face {
+  font-family: "gothambold1";
+  src: url("../assets/fonts/gothambold/gothambold1.eot"), url("../assets/fonts/gothambold/gothambold1.woff") format("woff"), url("../assets/fonts/gothambold/gothambold1.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gotham Medium Regular";
+  src: url("../assets/fonts/GothamMediumRegular/Gotham-Medium.eot"), url("../assets/fonts/GothamMediumRegular/gotham-medium-webfont.woff") format("woff"), url("../assets/fonts/GothamMediumRegular/Gotham-Medium-Regular.ttf") format("truetype");
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 10;
+  top: 53px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 88px;
+  padding-right: 85px;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 595px;
+}
+.nav__item {
+  font-family: "GothamBook";
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__item::before {
+  content: "";
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  margin-right: 14px;
+}
+.nav__item:hover:before {
+  background-color: #ffffff;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 163px;
+}
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 41px;
+  height: 40px;
+}
+.social__item:hover {
+  cursor: pointer;
+  background-color: #7e5aff;
+}
+
+.vert-slider__item {
+  position: relative;
+}
+.vert-slider__item__img {
+  width: 100%;
+  height: 800px;
+}
+.vert-slider__item__grad {
+  height: 800px;
+  background: linear-gradient(200deg, rgba(126, 90, 255, 0.6334908964) 47%, rgba(85, 183, 255, 0.5522584034) 100%);
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+}
+.vert-slider__item__text {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 100%;
+  top: 0;
+}
+.vert-slider__item__title {
+  font-family: "gothambold1";
+  font-size: 80px;
+  color: #ffffff;
+  position: relative;
+  z-index: 99;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 50px;
+  line-height: 65px;
+  margin-left: 11px;
+}
+.vert-slider__item__subtitle {
+  font-family: "gothambold1";
+  font-size: 18px;
+  color: #ffffff;
+  position: relative;
+  z-index: 99;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+  margin-top: 35px;
+  margin-left: 9px;
+}
+
+.vertical-dots {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
+}
+.vertical-dots li {
+  list-style: none;
+  margin: 30px 0;
+}
+.vertical-dots button {
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #ffffff;
+  background: none;
+  text-indent: -9999px;
+  outline: 0;
+}
+.vertical-dots button:hover {
+  background-color: #ffffff;
+}
+
+.slick-active button {
+  background-color: #ffffff;
+}
+
+.header-arrow {
+  position: absolute;
+  z-index: 21;
+  top: 711px;
+  left: 49%;
+}
+
+.icon-circle-down {
+  font-size: 40px;
+  color: #ffffff;
+  position: absolute;
+}
+
+.projects {
+  width: 100%;
+}
+.projects__line-span {
+  width: 100px;
+  height: 1px;
+  background-color: #2c4058;
+  display: block;
+  margin: 99px auto 31px;
+}
+.projects__section-title {
+  font-family: "gothambold1";
+  font-size: 44px;
+  color: #2c4058;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 160px;
+}
+
+.project {
+  display: flex;
+}
+.project__shadow {
+  width: 585px;
+  height: 470px;
+  background-color: #55b7ff;
+  position: absolute;
+  margin-left: -215px;
+  margin-top: -70px;
+}
+.project__img {
+  width: 630px;
+  height: 470px;
+  position: relative;
+}
+
+.description {
+  margin-top: 56px;
+  margin-left: 70px;
+}
+.description__title1 {
+  font-family: "GothamBook";
+  font-size: 22px;
+  color: #2c4058;
+  text-transform: uppercase;
+}
+.description__title2 {
+  font-family: "gothambold1";
+  font-size: 44px;
+  color: #2c4058;
+  text-transform: uppercase;
+}
+.description__subtitle {
+  width: 460px;
+  font-family: "GothamBook";
+  font-size: 18px;
+  color: #4b5562;
+  letter-spacing: normal;
+  text-align: left;
+  margin-top: 24px;
+  letter-spacing: -1px;
+  word-spacing: 4px;
+  line-height: 30px;
+}
+.description__button {
+  margin-top: 31px;
+  width: 190px;
+  height: 50px;
+  border: solid 1px #2c4058;
+  background-color: #ffffff;
+  font-family: "Gotham Medium Regular";
+  font-size: 14px;
+  color: #2c4058;
+  text-transform: uppercase;
+}
+.description__button:hover {
+  background-color: #2c4058;
+  color: #ffffff;
+}
+.description__address {
+  margin-top: 58px;
+  font-family: "gothambook";
+  font-style: italic;
+  font-size: 16px;
+}
+
+.project2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 210px;
+  margin-bottom: 140px;
+}
+.project2__shadow {
+  width: 585px;
+  height: 470px;
+  background-color: #7e5aff;
+  position: absolute;
+  margin-right: -215px;
+  margin-top: -70px;
+}
+.project2__img {
+  width: 630px;
+  height: 470px;
+  position: relative;
+}
+
+.description2 {
+  margin-right: 71px;
+  margin-top: 55px;
+}
+
+.container {
+  position: relative;
+  z-index: 20;
+}
+
+.news {
+  background-image: url("../assets/img/jpg/3-bg.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  height: 1035px;
+  padding-top: 41px;
+}
+.news__grad {
+  background: linear-gradient(36deg, rgba(126, 90, 255, 0.6334908964) 2%, rgba(85, 183, 255, 0.5522584034) 100%);
+  position: absolute;
+  width: 100%;
+  height: 1035px;
+  top: 0;
+}
+.news__line-span {
+  width: 100px;
+  height: 1px;
+  background-color: #ffffff;
+  display: block;
+  margin: 99px auto 31px;
+}
+.news__section-title {
+  font-family: "gothambold1";
+  font-size: 44px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 88px;
+}
+
+.slider-news__item {
+  width: 370px !important;
+  margin-right: 21px;
+  background-color: #ffffff;
+}
+.slider-news__item__img {
+  width: 370px;
+  height: 240px;
+}
+.slider-news__item__img--img {
+  width: 370px;
+  height: 240px;
+}
+.slider-news__item__title {
+  font-family: "gothambold1";
+  font-size: 22px;
+  color: #2c4058;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 20px 73px 6px 21px;
+  line-height: 1.55;
+}
+.slider-news__item__subtitle {
+  font-family: "GothamBook";
+  font-size: 17px;
+  padding: 0px 10px 36px 20px;
+  line-height: 1.67;
+}
+.slider-news__item__author {
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+.slider-news__item__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.slider-news__item__text {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slider-news__item__name {
+  font-family: "GothamBook";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2c4058;
+  padding-bottom: 10px;
+}
+.slider-news__item__date {
+  font-family: "GothamBook";
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #55b7ff;
+}
+.slider-news__item2 {
+  width: 370px !important;
+  margin-right: 21px;
+  background-color: #ffffff;
+}
+.slider-news__item2__title {
+  font-family: "gothambold1";
+  font-size: 22px;
+  color: #2c4058;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 20px 42px 3px 21px;
+  line-height: 1.55;
+}
+.slider-news__item2__subtitle {
+  font-family: "GothamBook";
+  font-size: 18px;
+  padding: 0px 33px 33px 20px;
+  line-height: 1.67;
+}
+.slider-news__item3 {
+  width: 370px !important;
+  margin-right: 21px;
+  background-color: #ffffff;
+}
+.slider-news__item3__title {
+  font-family: "gothambold1";
+  font-size: 22px;
+  color: #2c4058;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 20px 42px 5px 21px;
+  line-height: 1.55;
+}
+.slider-news__item3__subtitle {
+  font-family: "GothamBook";
+  font-size: 18px;
+  padding: 0px 33px 34px 20px;
+  line-height: 1.67;
+}
+
+.horizon-dots {
+  position: absolute;
+  transform: translateY(-50%);
+  right: 461px;
+  display: flex;
+  bottom: 431px;
+}
+.horizon-dots li {
+  list-style: none;
+  margin: 0 20px;
+}
+.horizon-dots button {
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #ffffff;
+  background: none;
+  text-indent: -9999px;
+  outline: 0;
+}
+.horizon-dots button:hover {
+  background-color: #ffffff;
+}
+
+.slick-active button {
+  background-color: #ffffff;
+}
+
+.icon-circle-right {
+  font-size: 40px;
+  color: #ffffff;
+  position: absolute;
+  top: 238px;
+  right: -102px;
+}
+
+.icon-circle-left {
+  font-size: 40px;
+  color: #ffffff;
+  position: absolute;
+  top: 238px;
+  left: -100px;
+}
+
+.gallery__a {
+  display: flex;
+}
+.gallery__button {
+  width: 190px;
+  height: 50px;
+  border: solid 1px #2c4058;
+  background-color: #ffffff;
+  font-family: "Gotham Medium Regular";
+  font-size: 14px;
+  color: #2c4058;
+  text-transform: uppercase;
+  margin: 60px auto 140px;
+}
+.gallery__button:hover {
+  background-color: #2c4058;
+  color: #ffffff;
+}
+.gallery__line-span {
+  width: 100px;
+  height: 1px;
+  background-color: #2c4058;
+  display: block;
+  margin: 140px auto 31px;
+}
+.gallery__section-title {
+  font-size: 44px;
+  color: #2c4058;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "GothamBook";
+  margin-bottom: 95px;
+}
+
+.picture {
+  display: flex;
+}
+.picture__big {
+  width: 580px;
+  height: 438px;
+  position: relative;
+}
+.picture__big__symbol {
+  position: absolute;
+  margin-left: -329px;
+  margin-top: 179px;
+}
+.picture__big__symbol:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 1s;
+}
+.picture__mosaic {
+  display: flex;
+  flex-wrap: wrap;
+}
+.picture__mosaic__item {
+  width: 285px;
+  height: 214px;
+  margin-left: 10px;
+}
+.picture__mosaic__item:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 1s;
+}
+.picture__mosaic__item--row {
+  margin-top: 5px;
+}
+
+#map {
+  height: 700px;
+  width: 100%;
+  background-color: grey;
+}
+
+.footer {
+  background-image: url("../assets/img/jpg/footer-bg.jpg");
+  width: 100%;
+  height: 524px;
+  position: relative;
+}
+.footer__grad {
+  background: linear-gradient(200deg, rgba(126, 90, 255, 0.6334908964) 47%, rgba(85, 183, 255, 0.5522584034) 100%);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 524px;
+}
+.footer__bar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 198px;
+  width: 770px;
+  margin: 0 auto;
+}
+.footer__text {
+  display: flex;
+  width: 770px;
+  margin: 0 auto;
+  padding-top: 38px;
+}
+.footer__text__copyright {
+  font-family: "GothamBook";
+  font-size: 14px;
+  color: #ffffff;
+  text-align: left;
+  margin-right: 18px;
+}
+.footer__text__made {
+  font-family: "GothamBook";
+  font-size: 14px;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 18px;
+}
+.footer__text__span {
+  color: white;
+}
+
+.contact {
+  width: 770px;
+  height: 450px;
+  background-color: white;
+  padding-top: 60px;
+  box-shadow: 0px -4px 30px 0 rgba(133, 133, 133, 0.2);
+  position: absolute;
+  top: -300px;
+  left: 200px;
+}
+.contact__line-span {
+  width: 100px;
+  height: 1px;
+  display: block;
+  color: #2c4058;
+  margin-bottom: 19px;
+}
+.contact__section-title {
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "GothamBook";
+  color: #2c4058;
+  margin-bottom: 50px;
+}
+.contact__wrap {
+  display: flex;
+  margin: 0px 60px;
+}
+.contact__info__item {
+  font-family: "GothamBook";
+  font-size: 18px;
+  color: #2c4058;
+  padding-bottom: 38px;
+}
+.contact__info__item--violet {
+  color: #7e5aff;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 46px;
+  width: 310px;
+}
+.contact__form__input {
+  border: none;
+  border-bottom: 1px solid #d5d9de;
+  padding-bottom: 20px;
+  margin-bottom: 36px;
+  width: 100%;
+  color: #d5d9de;
+}
+.contact__form__input::placeholder {
+  font-family: "GothamBook";
+  font-size: 18px;
+}
+.contact__form__input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #2c4058;
+  color: #2c4058;
+}
+.contact__form__button {
+  width: 140px;
+  height: 50px;
+  border: solid 1px #2c4058;
+  align-self: flex-end;
+  margin-top: -9px;
+}
+.contact__form__button:hover {
+  background-color: #2c4058;
+  color: #ffffff;
+}
